@@ -8,9 +8,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "express": "^4.19.2",
-    "type": "module"
-  }
+    "express": "^4.21.0",
+    "express-handlebars": "^8.0.1",
+    "socket.io": "^4.8.0"
+  },
+  "type": "module",
+  "description": ""
 }
