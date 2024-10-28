@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import mongoosePaging from 'mongoose-paginate-v2';
+import mongoosePaginate from 'mongoose-paginate-v2';
 
 const userCollection = "users";
 

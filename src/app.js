@@ -6,9 +6,9 @@ import __dirname from "./utils.js";
 
 import viewsRouter from './routes/views.router.js';
 
-dotenv.config();
 const app = express();
 
+dotenv.config();
 const uriConexion = process.env.URLMONGODB;
 
 mongoose.connect(uriConexion);

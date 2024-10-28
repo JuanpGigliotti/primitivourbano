@@ -1,0 +1,25 @@
+
+{{#if isValid}}
+<div>
+{{#each}}
+    <div>
+        <p>nombre: {{this.first_name}} &nbsp; apellido: {{this.last_name}}</p>
+    </div>
+{{/each}}
+</div>
+<br/>
+<div>
+    {{#if hasPrevPage}}
+    <a href="{{this.prevLink}}">anterior</a>
+    {{/if}}
+    &nbsp;
+    {{this.page}}
+    &nbsp;
+    {{#if hasNextPage}}
+    <a href={{this.nextLink}}>siguiente</a>
+    {{/if}}
+</div>
+
+{{else}}
+<p>No se encontraron resultados.</p>
+{{/if}}
