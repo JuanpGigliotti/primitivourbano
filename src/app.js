@@ -5,6 +5,9 @@ import dotenv from 'dotenv';
 import __dirname from "./utils.js";
 
 import viewsRouter from './routes/views.router.js';
+import productsRouter from './routes/products.router.js';
+import cartsRouter from './routes/carts.router.js';
+
 
 const app = express();
 
@@ -25,3 +28,12 @@ app.set("view engine", "handlebars");
 app.use('/',viewsRouter);
 
 app.listen(8080, () => console.log('listening on PORT 8080'));
+
+app.use(express.json());   
+app.use(express.urlencoded({extended: true}));
+
+// Rutas
+
+app.use('/api/products', productsRouter);
+
+app.use('/api/carts', cartsRouter);
